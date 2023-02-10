@@ -19,9 +19,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @php
-                                $i=1;
-                            @endphp
                             @forelse ($users as $user)
                                 {{-- Task: only every second row should have "bg-red-100" --}}
                                 <tr @class(['bg-red-100' => $loop->even])>
